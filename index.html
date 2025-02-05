@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Time-Varying Preference Bandits for Personalizing Robot Behaviors</title>
+  <link rel="icon" type="image/x-icon" href="static/images/railab.png">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Learning-based Dynamic Robot-to-Human Handover</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://github.com/zerotohero7886" target="_blank">Hyeonseong Kim</a><sup>1</sup>,</span>
+                <span class="author-block">
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Chanwoo Kim</a><sup>1</sup>,</span>
+                    <span class="author-block">
+                      <a href="https://vllab.cau.ac.kr/members/professor/" target="_blank">Matthew Pan</a><sup>2</sup>
+                    </span>
+                      <span class="author-block">
+                        <a href="https://sites.google.com/view/kyungjaelee/" target="_blank">Kyungjae Lee</a><sup>3</sup>
+                      </span>
+                        <span class="author-block"></span>
+                          <a href="https://sites.google.com/view/sungjoon-choi/" target="_blank">Sungjoon Choi</a><sup>1*</sup>
+                        </span>
+                  </div>
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">Department of Aritificial Intelligence, Korea University<sup>1</sup></span>
+                    <!-- <span class="author-block">Department of Aritificial Intelligence, Chung-Ang University<sup>2</sup></span> -->
+                    <span class="author-block">Ingenuity Labs Research Institute, Queen's University<sup>2</sup></span>
+                    <span class="author-block">Department of Statistics, Korea University<sup>3</sup></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links" style="display: flex; justify-content: center; gap: 10px;">
+                      <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                          <span class="icon">
+                            <i class="fas fa-file-pdf"></i>
+                          </span>
+                          <span>Paper</span>
+                        </a>
+                      </span>
+
+                      <!-- Github link -->
+                      <span class="link-block">
+                        <a href="https://github.com/zerotohero7886/dyn-r2h-handover" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                          <span class="icon">
+                            <i class="fab fa-github"></i>
+                          </span>
+                          <span>Code</span>
+                        </a>
+                      </span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <source src="static/videos/dyn_ho_pp_video_door.mp4"
+        type="video/mp4">
+      </video>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- News -->
+<!-- <section class="hero is-small">  
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">News</h2>
+        <div class="content has-text-justified">
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- News -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            This paper presents a novel learning-based approach to dynamic robot-to-human handover, addressing the challenges of delivering objects to a moving receiver. 
+            We hypothesize that dynamic handover, where the robot adjusts to the receiver’s movements, results in more efficient and comfortable interaction compared to static handover, where the receiver is assumed to be stationary. 
+            To validate this, we developed a nonparametric method for generating continuous handover motion, conditioned on the receiver's movements, and trained the model using a dataset of 1,000 human-to-human handover demonstrations. 
+            We integrated preference learning for improved handover effectiveness and applied impedance control to ensure user safety and adaptiveness. 
+            The approach was evaluated in both simulation and real-world settings, with user studies demonstrating that dynamic handover significantly reduces handover time and improves user comfort compared to static methods.
+            Videos and demonstrations of our approach are available at <u>https://dyn-r2h-handover.github.io/</u>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Video comparison -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container" style="max-width: 900px;">
+      <h2 class="title is-3 has-text-centered">Which one looks best?</h2>
+      <div class="columns is-centered is-mobile">
+        <div class="column is-one-third">
+          <video poster="" id="time_varying_preference" autoplay controls muted loop width="100%">
+            <source src="static/videos/static.mp4"
+            type="video/mp4">
+          </video>
+          <p class="has-text-centered mt-2">Static</p>
+        </div>
+        <div class="column is-one-third">
+          <video poster="" id="tide_up_the_desk" autoplay controls muted loop width="100%">
+            <source src="static/videos/predefined.mp4"
+            type="video/mp4">
+          </video>
+          <p class="has-text-centered mt-2">Dynamic w/o adaptiveness</p>
+        </div>
+        <div class="column is-one-third has-background-primary-light">
+          <video poster="" id="drive" autoplay controls muted loop width="100%">
+            <source src="static/videos/dynamic.mp4"
+            type="video/mp4">
+          </video>
+          <p class="has-text-centered mt-2 has-text-weight-bold">Dynamic w/ adaptiveness<br><span class="has-text-primary is-size-5">(Ours)</span></p>
+        </div>
+      </div>
+      <div class="content has-text-justified mt-4">
+        <p>
+          <p class="has-text-centered"><strong>"We introduce a novel framework for dynamic robot-to-human handover that mimics human-to-human interactions."</strong></p>
+          <p>Many previous works assumed that the receiver is stationary, but <strong class="has-text-danger">in real-world scenarios, the receiver is often moving.</strong>
+          We hypothesize that dynamic handover, where the robot adjusts to the receiver's movements, results in more efficient and comfortable interaction compared to static handover, where the receiver is assumed to be stationary. To implement the seamless and natural interaction, we leverage <strong>human-to-human handover demonstration data</strong> and <strong>preference learning</strong> to train the robot.</strong></p>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End video comparison -->
+
+<!-- Data Collection -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container" style="max-width: 950px;">
+      <h2 class="title is-3">Data Collection</h2>
+      <div class="columns is-centered is-mobile">
+        <div class="column">
+          <video poster="" id="data_collection" autoplay controls muted loop width="100%">
+            <source src="static/videos/data_collection.mp4"
+            type="video/mp4">
+          </video>
+          <p class="has-text-centered">To generate natural robot motions, we take inspiration from human interactions. <strong>We collect 1,000 scenarios of human-to-human handover data</strong> using a combination of motion capture and a human pose estimation system. The collected human motion data enables the robot to learn more intuitive handover movements for humans.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Data Collection -->
+
+<!-- Preference Learning -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container" style="max-width: 950px;">
+      <h2 class="title is-3">Preference Learning</h2>
+      <div class="columns is-centered is-mobile">
+        <div class="column is-one-third">
+          <video poster="" id="preference_1" autoplay controls muted loop width="100%">
+            <source src="static/videos/too_fast.mp4"
+            type="video/mp4">
+          </video>
+          <p class="has-text-centered mt-2">Unoptimized Failure: Too Fast</p>
+        </div>
+        <div class="column is-one-third">
+          <video poster="" id="preference_2" autoplay controls muted loop width="100%">
+            <source src="static/videos/too_slow.mp4"
+            type="video/mp4">
+          </video>
+          <p class="has-text-centered mt-2">Unoptimized Failure: Too Slow</p>
+        </div>
+        <div class="column is-one-third">
+          <video poster="" id="preference_3" autoplay controls muted loop width="100%">
+            <source src="static/videos/too_strong.mp4"
+            type="video/mp4">
+          </video>
+          <p class="has-text-centered mt-2">Unoptimized Failure: Too Strong</p>
+        </div>
+      </div>
+      <div class="columns is-centered is-mobile">
+        <div class="column">
+          <video poster="" id="data_collection" autoplay controls muted loop width="100%">
+            <source src="static/videos/preference_learning.mp4"
+            type="video/mp4">
+          </video>
+          <p class="has-text-centered">The parameters for force control in real-time interactions significantly impact user satisfaction. Since these parameters have complex interdependencies, we utilize a preference learning approach to find proper parameters for the robot.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Preference Learning -->
+
+<!-- Realistic Scenarios -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container" style="max-width: 900px;">
+      <h2 class="title is-3 has-text-centered">Demonstrations with Realistic Scenarios</h2>
+      <div class="columns is-centered is-mobile">
+        <div class="column is-one-third">
+          <video poster="" id="time_varying_preference" autoplay controls muted loop width="100%">
+            <source src="static/videos/no_look_pass.mp4"
+            type="video/mp4">
+          </video>
+          <p class="has-text-centered mt-2">"No look pass"</p>
+        </div>
+        <div class="column is-one-third">
+          <video poster="" id="tide_up_the_desk" autoplay controls muted loop width="100%">
+            <source src="static/videos/forgot_my_cellphone.mp4"
+            type="video/mp4">
+          </video>
+          <p class="has-text-centered mt-2">"Forgot my cellphone"</p>
+        </div>
+        <div class="column is-one-third">
+          <video poster="" id="drive" autoplay controls muted loop width="100%">
+            <source src="static/videos/long_time_no_see.mp4"
+            type="video/mp4">
+          </video>
+          <p class="has-text-centered mt-2">"Long time no see"</p>
+        </div>
+      </div>
+      <div class="content has-text-justified mt-4">
+        <p>
+          <p class="has-text-centered"></p>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Realistic Scenarios -->
+
+<!-- Data Collection -->
+<section class="hero is-small">
+  <div class="hero-body" style="padding: 0;">
+    <div class="container" style="max-width: 950px;">
+      <h2 class="title is-3">User Study</h2>
+      <div class="columns is-centered is-mobile" style="margin-top: 0.5rem;">
+        <div class="column">
+          <video poster="" id="data_collection" autoplay controls muted loop width="100%">
+            <source src="static/videos/user_study.mp4"
+            type="video/mp4">
+          </video>
+          <p class="has-text-centered">We conducted a user study to evaluate the effectiveness of our approach. The results show that dynamic handover significantly reduces handover time and improves user comfort compared to static methods and dynamic without optimized parameters.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Data Collection -->
+<!-- User Study Video Selection -->
+<section class="hero is-small">
+  <div class="hero-body" style="padding-top: 0;">
+    <div class="container" style="max-width: 950px;">
+      <div class="columns is-centered">
+        <div class="column">
+          <div class="select is-fullwidth mb-4" style="text-align: center;">
+            <select id="videoSelector" onchange="changeVideo()" style="text-align-last: center;">
+              <option value="dynamic">Dynamic-Optimized (Ours)</option>
+              <option value="static">Static</option>
+              <option value="unoptimized">Dynamic-Unoptimized</option>
+            </select>
+          </div>
+          <video id="selectedVideo" autoplay controls muted loop width="100%">
+            <source src="static/videos/user_study_opt.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+function changeVideo() {
+  const selector = document.getElementById('videoSelector');
+  const video = document.getElementById('selectedVideo');
+  const videoSrc = video.getElementsByTagName('source')[0];
+  
+  switch(selector.value) {
+    case 'dynamic':
+      videoSrc.src = 'static/videos/user_study_opt.mp4';
+      break;
+    case 'static':
+      videoSrc.src = 'static/videos/user_study_static.mp4';
+      break;
+    case 'unoptimized':
+      videoSrc.src = 'static/videos/user_study_unopt.mp4';
+      break;
+  }
+  
+  video.load();
+  video.play();
+}
+</script>
+
+
+<!--BibTex citation -->
+  <!-- <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+</section> -->
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
