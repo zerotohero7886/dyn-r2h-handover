@@ -72,7 +72,8 @@
                   <div class="is-size-5 publication-authors">
                     <span class="author-block">Department of Aritificial Intelligence, Korea University<sup>1</sup></span>
                     <!-- <span class="author-block">Department of Aritificial Intelligence, Chung-Ang University<sup>2</sup></span> -->
-                    <span class="author-block">Ingenuity Labs Research Institute, Queen's University<sup>2</sup></span>
+                    <span class="author-block">Department of Electrical and
+                      Computer Engineering, Queen's University<sup>2</sup></span>
                     <span class="author-block">Department of Statistics, Korea University<sup>3</sup></span>
                   </div>
 
@@ -91,7 +92,8 @@
 
                       <!-- Github link -->
                       <span class="link-block">
-                        <a href="https://zerotohero7886.github.io/dyn-r2h-handover/ target="_blank"
+                        <a href="https://zerotohero7886.github.io/dyn-r2h-handover"
+                        target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                           <span class="icon">
                             <i class="fab fa-github"></i>
@@ -175,26 +177,26 @@
             <source src="static/videos/static.mp4"
             type="video/mp4">
           </video>
-          <p class="has-text-centered mt-2">Static</p>
+          <p class="has-text-centered mt-2">Baseline</p>
         </div>
         <div class="column is-one-third">
           <video poster="" id="tide_up_the_desk" autoplay controls muted loop width="100%">
             <source src="static/videos/predefined.mp4"
             type="video/mp4">
           </video>
-          <p class="has-text-centered mt-2">Dynamic w/o adaptiveness</p>
+          <p class="has-text-centered mt-2">Baseline</p>
         </div>
         <div class="column is-one-third has-background-primary-light">
           <video poster="" id="drive" autoplay controls muted loop width="100%">
             <source src="static/videos/dynamic.mp4"
             type="video/mp4">
           </video>
-          <p class="has-text-centered mt-2 has-text-weight-bold">Dynamic w/ adaptiveness<br><span class="has-text-primary is-size-5">(Ours)</span></p>
+          <p class="has-text-centered mt-2 has-text-weight-bold"><span class="has-text-primary is-size-5">(Ours)</span></p>
         </div>
       </div>
       <div class="content has-text-justified mt-4">
         <p>
-          <p class="has-text-centered"><strong>"We introduce a novel framework for dynamic robot-to-human handover that mimics human-to-human interactions."</strong></p>
+          <p class="content has-text-justified"><strong>"We introduce a novel framework for dynamic robot-to-human handover that mimics human-to-human interactions."</strong></p>
           <p>Many previous works assumed that the receiver is stationary, but <strong class="has-text-danger">in real-world scenarios, the receiver is often moving.</strong>
           We hypothesize that dynamic handover, where the robot adjusts to the receiver's movements, results in more efficient and comfortable interaction compared to static handover, where the receiver is assumed to be stationary. To implement the seamless and natural interaction, we leverage <strong>human-to-human handover demonstration data</strong> and <strong>preference learning</strong> to train the robot.</strong></p>
         </p>
@@ -215,7 +217,7 @@
             <source src="static/videos/data_collection.mp4"
             type="video/mp4">
           </video>
-          <p class="has-text-centered">To generate natural robot motions, we take inspiration from human interactions. <strong>We collect 1,000 scenarios of human-to-human handover data</strong> using a combination of motion capture and a human pose estimation system. The collected human motion data enables the robot to learn more intuitive handover movements for humans.</p>
+          <p class="content has-text-justified">To generate natural robot motions, we take inspiration from human interactions. <strong>We collect 1,000 scenarios of human-to-human handover data</strong> using a combination of motion capture and a human pose estimation system. The collected human motion data enables the robot to learn more intuitive handover movements for humans.</p>
         </div>
       </div>
     </div>
@@ -234,21 +236,21 @@
             <source src="static/videos/too_fast.mp4"
             type="video/mp4">
           </video>
-          <p class="has-text-centered mt-2">Unoptimized Failure: Too Fast</p>
+          <p class="has-text-centered mt-2">Failure case: "Too fast"</p>
         </div>
         <div class="column is-one-third">
           <video poster="" id="preference_2" autoplay controls muted loop width="100%">
             <source src="static/videos/too_slow.mp4"
             type="video/mp4">
           </video>
-          <p class="has-text-centered mt-2">Unoptimized Failure: Too Slow</p>
+          <p class="has-text-centered mt-2">Failure case: "Too slow"</p>
         </div>
         <div class="column is-one-third">
           <video poster="" id="preference_3" autoplay controls muted loop width="100%">
             <source src="static/videos/too_strong.mp4"
             type="video/mp4">
           </video>
-          <p class="has-text-centered mt-2">Unoptimized Failure: Too Strong</p>
+          <p class="has-text-centered mt-2">Failure case: "Too strong"</p>
         </div>
       </div>
       <div class="columns is-centered is-mobile">
@@ -257,7 +259,8 @@
             <source src="static/videos/preference_learning.mp4"
             type="video/mp4">
           </video>
-          <p class="has-text-centered">The parameters for force control in real-time interactions significantly impact user satisfaction. Since these parameters have complex interdependencies, we utilize a preference learning approach to find proper parameters for the robot.</p>
+          <p class="content has-text-justified">
+            Our system employs force-based control, where key parameters related to tracking performance, stiffness, and release timing are intricately interdependent. To optimize the system, we utilize a preference learning approach that adapts these parameters based on human feedback.</p>
         </div>
       </div>
     </div>
@@ -305,16 +308,16 @@
 
 <!-- Data Collection -->
 <section class="hero is-small">
-  <div class="hero-body" style="padding: 0;">
+  <div class="hero-body">
     <div class="container" style="max-width: 950px;">
-      <h2 class="title is-3">User Study</h2>
-      <div class="columns is-centered is-mobile" style="margin-top: 0.5rem;">
+      <h2 class="title is-3 has-text-centered">User Study Videos</h2>
+      <div class="columns is-centered is-mobile">
         <div class="column">
           <video poster="" id="data_collection" autoplay controls muted loop width="100%">
             <source src="static/videos/user_study.mp4"
             type="video/mp4">
           </video>
-          <p class="has-text-centered">We conducted a user study to evaluate the effectiveness of our approach. The results show that dynamic handover significantly reduces handover time and improves user comfort compared to static methods and dynamic without optimized parameters.</p>
+          <p class="content has-text-justified">We conducted a number of user studies to evaluate the effectiveness of our approach. The results show that dynamic handover significantly reduces handover time and enhances user comfort compared to static methods and a dynamic approach without system optimization.</p>
         </div>
       </div>
     </div>
